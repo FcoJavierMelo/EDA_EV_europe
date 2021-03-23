@@ -3,7 +3,7 @@ import json
 
 
 def data_world_electric():
-    df_electric = pd.read_csv('../Datos/Generacion/owid-energy-data.txt')
+    df_electric = pd.read_csv('./Datos/Generacion/owid-energy-data.txt')
 
     return df_electric
 
@@ -46,7 +46,7 @@ def data_filtered(name_field_year,
 
 
 def transform_geojson(df):
-    with open('../Datos/Mapas/custom.geo.json') as fp:
+    with open('./Datos/Mapas/custom.geo.json') as fp:
         geo_world = json.load(fp)
 
     # Instanciating necessary lists
@@ -90,17 +90,17 @@ def transform_geojson(df):
 
 
 def emissions_lifetime_cars():
-    df_lifetime = pd.read_csv('../Datos/Coches/emissions_lifetime_cars.csv')
+    df_lifetime = pd.read_csv('./Datos/Coches/emissions_lifetime_cars.csv')
 
     return df_lifetime
 
 def cars_sales():
-    df_cars_sales = pd.read_csv('../Datos/Coches/sales-cars-europe-per-year.csv')
+    df_cars_sales = pd.read_csv('./Datos/Coches/sales-cars-europe-per-year.csv')
 
     return df_cars_sales
 
 def plugin_cars_sales():
-    df_plugin_cars_sales = pd.read_csv('../Datos/Coches/plugin-cars-sales.csv')
+    df_plugin_cars_sales = pd.read_csv('./Datos/Coches/plugin-cars-sales.csv')
 
     return df_plugin_cars_sales
 
@@ -154,13 +154,13 @@ def melt_ev_cars_sales(df):
 
 
 def ev_cars_sales():
-    df_ev_cars_2014 = pd.read_csv('../Datos/Coches/ev-cars-sales-2014.csv', thousands=".")
-    df_ev_cars_2015 = pd.read_csv('../Datos/Coches/ev-cars-sales-2015.csv', thousands=".")
-    df_ev_cars_2016 = pd.read_csv('../Datos/Coches/ev-cars-sales-2016.csv', thousands=".")
-    df_ev_cars_2017 = pd.read_csv('../Datos/Coches/ev-cars-sales-2017.csv', thousands=".")
-    df_ev_cars_2018 = pd.read_csv('../Datos/Coches/ev-cars-sales-2018.csv', thousands=".")
-    df_ev_cars_2019 = pd.read_csv('../Datos/Coches/ev-cars-sales-2019.csv', thousands=".")
-    df_ev_cars_2020 = pd.read_csv('../Datos/Coches/ev-cars-sales-2020.csv', thousands=".")
+    df_ev_cars_2014 = pd.read_csv('./Datos/Coches/ev-cars-sales-2014.csv', thousands=".")
+    df_ev_cars_2015 = pd.read_csv('./Datos/Coches/ev-cars-sales-2015.csv', thousands=".")
+    df_ev_cars_2016 = pd.read_csv('./Datos/Coches/ev-cars-sales-2016.csv', thousands=".")
+    df_ev_cars_2017 = pd.read_csv('./Datos/Coches/ev-cars-sales-2017.csv', thousands=".")
+    df_ev_cars_2018 = pd.read_csv('./Datos/Coches/ev-cars-sales-2018.csv', thousands=".")
+    df_ev_cars_2019 = pd.read_csv('./Datos/Coches/ev-cars-sales-2019.csv', thousands=".")
+    df_ev_cars_2020 = pd.read_csv('./Datos/Coches/ev-cars-sales-2020.csv', thousands=".")
 
     df_ev_cars_2014 = clean_ev_cars_sales(df_ev_cars_2014)
     df_ev_cars_2015 = clean_ev_cars_sales(df_ev_cars_2015)
