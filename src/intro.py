@@ -3,7 +3,7 @@ from PIL import Image
 
 
 def intro():
-    img = Image.open("../img/portada.jpg")
+    img = Image.open("./img/portada.jpg")
     st.image(img, use_column_width='auto')
 
     st.markdown('''## Objetivo del estudio
