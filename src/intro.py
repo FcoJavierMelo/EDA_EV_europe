@@ -18,9 +18,10 @@ def intro():
  * Mayor variedad en la oferta de vehiculos electricos
  * Regulación de emisiones a nivel de la EU
 ### 
-### Se manejan las siguientes hipotesis:
- 1- El coche electrico ayuda a rebajar las emisisones, sobre todo con energia renovable
- 2- Las ventas estan empezando un punto de inflexión
+### Se manejan las siguientes hipotesis: 
+ 1- El coche electrico ayuda a rebajar las emisisones, sobre todo con energia renovable  
+  
+ 2- Las ventas estan empezando un punto de inflexión  
 ### 
 Sigue a un joven Elon Musk (antes de pasar por Turquia) en este emocionante viaje
 ''')
