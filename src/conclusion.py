@@ -7,7 +7,7 @@ def conclusion():
                 ### El vehículo eléctrico y las renovables, combinación ganadora para el planeta
                 ''')
 
-    img = Image.open("../img/meme_ev_2.jpg")
+    img = Image.open("./img/meme_ev_2.jpg")
     st.image(img, use_column_width='auto')
 
     st.markdown('''
@@ -18,21 +18,21 @@ def conclusion():
     col1, col2 = st.beta_columns(2)
 
     with col1:
-        img = Image.open("../img/Ford.PNG")
+        img = Image.open("./img/Ford.PNG")
         st.image(img, use_column_width='auto')
 
     with col2:
-        img = Image.open("../img/Jaguar.PNG")
+        img = Image.open("./img/Jaguar.PNG")
         st.image(img, use_column_width='auto')
 
     col1, col2 = st.beta_columns(2)
 
     with col1:
-        img = Image.open("../img/volkswagen.PNG")
+        img = Image.open("./img/volkswagen.PNG")
         st.image(img, use_column_width='auto')
 
     with col2:
-        img = Image.open("../img/comisión.PNG")
+        img = Image.open("./img/comisión.PNG")
         st.image(img, use_column_width='auto')
 
     st.markdown('''                    
@@ -40,7 +40,7 @@ def conclusion():
                     ''')
 
     with st.beta_expander("Ver imagen"):
-        img = Image.open("../img/old_elon.jpg")
+        img = Image.open("./img/old_elon.jpg")
         st.image(img, use_column_width='auto')
 
     st.markdown('''                    

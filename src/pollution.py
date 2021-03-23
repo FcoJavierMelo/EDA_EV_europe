@@ -63,7 +63,7 @@ def pollution(config):
     puede provenir de fuentes emisoras de contaminación.
     ''')
 
-    img = Image.open("../img/meme_ev_1.jpg")
+    img = Image.open("./img/meme_ev_1.jpg")
     st.image(img, use_column_width='auto')
 
     st.markdown('''
@@ -74,7 +74,7 @@ def pollution(config):
         
         ''')
 
-    img = Image.open("../img/contaminacion_ciudades.jpg")
+    img = Image.open("./img/contaminacion_ciudades.jpg")
     st.image(img, use_column_width='auto')
 
     st.markdown('''
@@ -229,14 +229,14 @@ def pollution(config):
         ## Pero ¿y la elaboración de las baterias?        
         ''')
 
-    img = Image.open("../img/cuñado.jpg")
+    img = Image.open("./img/cuñado.jpg")
     st.image(img, use_column_width='auto')
 
     st.markdown('''
            ### Noticias en prensa sobre el mismo estudio que afirma que un diésel contamina mas que un eléctrico.        
            ''')
 
-    img = Image.open("../img/Noticias.PNG")
+    img = Image.open("./img/Noticias.PNG")
     st.image(img, use_column_width='auto')
 
     df_lifetime = data_convert.emissions_lifetime_cars()

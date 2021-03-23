@@ -26,5 +26,5 @@ Sigue a un joven Elon Musk (antes de pasar por Turquia) en este emocionante viaj
 ''')
 
     with st.beta_expander("Ver imagen"):
-        img = Image.open("../img/young_elon.jpg")
+        img = Image.open("./img/young_elon.jpg")
         st.image(img, use_column_width='auto')
